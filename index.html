@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APP-Web2 Assignment01</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+        <h2>Places to visit</h2>
+        <div class="content">
+            <div class="images">
+                <img class="image1" src="https://lp-cms-production.imgix.net/2019-06/ae73a6a589630733f1b9bb99174ea6e8-buddha-niches.jpg?auto=format&fit=crop&ar=1:1&q=75&w=640" alt="Bamyan palace">
+                <img class="image2" src="https://thetravelhackinglife.com/wp-content/uploads/2022/08/Band-e-Amir-National-Park-Bamyan-Afghanistan.jpg" alt="Band-e-Amir">
+                <img class="image3" src="https://static.javatpoint.com/tourist-places/images/tourist-places-in-afghanistan7.png" alt="Rustam rust">
+                <img class="image4" src="https://yt3.googleusercontent.com/EaXBJG56danpLayeevKi-SuehXSCJ8Ae52ig4m3uEqai0_2AY204j6YwNS6hwuGNCoqHsG7C=s900-c-k-c0x00ffffff-no-rj" alt="Rawze Sharif">
+            </div>
+            <div class="main">
+                <img class="main-img" src="https://lp-cms-production.imgix.net/2019-06/ae73a6a589630733f1b9bb99174ea6e8-buddha-niches.jpg?auto=format&fit=crop&ar=1:1&q=75&w=640" alt="Bamyan palace">
+                <p class="caption"><strong>Bamyan palace</strong></p>
+            </div>
+        </div>
+        <script>
+          console.log("testing")
+          console.log(document.querySelector(".image1"))
+          document.querySelector(".image1").onclick = function() {
+              document.querySelector(".main-img").src = document.querySelector(".image1").src
+              document.querySelector(".main-img").alt = document.querySelector(".image1").alt
+              document.querySelector(".caption").innerHTML = document.querySelector(".image1").alt
+
+          }
+          console.log(document.querySelector(".image2"))
+          document.querySelector(".image2").onclick = function() {
+              document.querySelector(".main-img").src = document.querySelector(".image2").src
+              document.querySelector(".main-img").alt = document.querySelector(".image2").alt
+              document.querySelector(".caption").innerHTML = document.querySelector(".image2").alt
+
+          }
+
+          console.log(document.querySelector(".image3"))
+          document.querySelector(".image3").onclick = function() {
+              document.querySelector(".main-img").src = document.querySelector(".image3").src
+              document.querySelector(".main-img").alt = document.querySelector(".image3").alt
+              document.querySelector(".caption").innerHTML = document.querySelector(".image3").alt
+
+          }
+          console.log(document.querySelector(".image4"))
+          document.querySelector(".image4").onclick = function() {
+              document.querySelector(".main-img").src = document.querySelector(".image4").src
+              document.querySelector(".main-img").alt = document.querySelector(".image4").alt
+              document.querySelector(".caption").innerHTML = document.querySelector(".image4").alt
+
+          }
+      </script>
+    </body>
+</html>
